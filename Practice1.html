@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ff0000;
+    }
+</style>
+<body>
+        <h1>Chapter 1 Practice Set</h1>
+    <script>
+        // Q1 :- Create a Variable of type string and try to add a number to it.
+        var a = "abdul";
+        var b = 25;
+        console.log (a + b)
+
+        // Q2 :- use typeof operator to find the datatype of the string in last question.
+        console.log(typeof (a + b))
+
+        // Q3 :- Create a const object in javascript can you change it to hold a number later.
+        const self = {
+            name : "abdul",
+            age : 25,
+            gender : "male"
+        }
+        //   self = 40
+        //   self = "kareem"
+        // Ans :- the answer of this question is object can't hold the number and sting later {No}.
+
+        // Q4 :- try to add a new key to the const object in problem 3 were you able to do it.
+
+        self['qualification'] = "BCA";
+        self['age'] = 24;
+        console.log(self)
+
+        // Q5 :- write a program to create a word - meaning dictionary of 5 word.
+
+        const dict = {
+            Accentuate : 'make more noticeable or prominent',
+            Berate     : 'scold or criticise someone angrily',
+            Bagel      : 'something that is transitive',
+            Abstruse   : 'difficult to understand',
+            Calumny    : ' a false accusation of an offense'
+        }
+        console.log(dict.Bagel)
+        console.log(dict.Calumny)
+
+
+
+    </script>
+</body>
+</html>
