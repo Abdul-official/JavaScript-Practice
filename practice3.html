@@ -28,7 +28,7 @@
          {
             console.log(a +  "*" +  i + "=" + (a*i))
             i++;
-         }*/
+         }
         
          //   do while loop
         let a = parseInt(prompt("enter the value of a"))
@@ -37,7 +37,36 @@
          do{
             console.log(a +  "*" +  i + "=" + (a*i))
             i++;
-         }while(i<=b);
+         }while(i<=b);*/
+
+         //Q1 :- write a program to print the marks of a student in an object using for loop.
+         let mark = {
+            abdul: 50,
+            hakeem: 60,
+            ibrahim: 90,
+            subhan: 100
+         }
+         for (let i=0;i<Object.keys(mark).length;i++){
+            console.log("the mark of " + Object.keys(mark)[i] +  " " + "are" + " " + mark[Object.keys(mark)[i]])
+         }
+         // Q2 :- write a program in Q1 using for in loop
+         for (let key in mark){
+            console.log("the mark of " + key  + " are " + mark[key])
+         }
+         // Q3 :- write a program to print "try again" until the user enter the correct number.
+         let cn = 4;
+         let i
+         while(i != cn){
+            console.log("try again!")
+            i = prompt("enter the number")
+         }
+         console.log(" you enter the correct number " +  i)
+         // Q4 :- write a function to find mean of 5 numbers.
+         let mean = (a,b,c,d)=> {
+            return (a + b + c + d)/4
+         }
+         console.log(mean(4,5,6,7))
+
 
 
     </script>
